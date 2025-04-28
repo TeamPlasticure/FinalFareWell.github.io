@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 11 Signatures</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f6fa;
+        }
+
+        .form-group {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .signature-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .signature-item {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .signature-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            padding: 5px;
+        }
+
+        .name-display {
+            display: none;
+            text-align: center;
+            padding: 8px;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 0 0 5px 5px;
+            margin-top: -5px;
+        }
+
+        .form-tutor {
+            text-align: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .form-tutor img {
+            width: 200px;
+            height: 80px;
+            object-fit: contain;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .signature-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .signature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 11A Form Group -->
+    <section class="form-group">
+        <h2>11A Form Group</h2>
+        <div class="signature-grid">
+            <!-- Repeat this block for each student -->
+            <div class="signature-item">
+                <img src="student-signature-url.jpg" alt="Student Signature">
+                <div class="name-display">Student Name</div>
+            </div>
+            <!-- Add more student items here -->
+        </div>
+
+        <div class="form-tutor">
+            <h3>Form Tutor Signature</h3>
+            <img src="tutor-signature-url.jpg" alt="Tutor Signature">
+            <p>Mr. John Smith</p>
+        </div>
+    </section>
+
+    <!-- Repeat for 11B-11G -->
+    <section class="form-group">
+        <h2>11B Form Group</h2>
+        <div class="signature-grid">
+            <!-- Student items here -->
+        </div>
+        <div class="form-tutor">
+            <h3>Form Tutor Signature</h3>
+            <img src="tutor-signature-url.jpg" alt="Tutor Signature">
+            <p>Ms. Sarah Johnson</p>
+        </div>
+    </section>
+
+    <!-- Add remaining form groups (11C-11G) following same structure -->
+
+    <script>
+        document.querySelectorAll('.signature-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const nameDisplay = this.querySelector('.name-display');
+                nameDisplay.style.display = nameDisplay.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,140 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Year 11 Signatures</title>
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f6fa;
-        }
-
-        .form-group {
-            margin-bottom: 40px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .signature-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .signature-item {
-            position: relative;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        .signature-item img {
-            width: 100%;
-            height: 120px;
-            object-fit: contain;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            background: white;
-            padding: 5px;
-        }
-
-        .name-display {
-            display: none;
-            text-align: center;
-            padding: 8px;
-            background-color: var(--secondary);
-            color: white;
-            border-radius: 0 0 5px 5px;
-            margin-top: -5px;
-        }
-
-        .form-tutor {
-            text-align: center;
-            padding: 20px;
-            background-color: #ecf0f1;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .form-tutor img {
-            width: 200px;
-            height: 80px;
-            object-fit: contain;
-            margin: 10px 0;
-        }
-
-        @media (max-width: 768px) {
-            .signature-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .signature-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Year 11 Signatures</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f6fa;
+    }
+    .form-group {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .signature-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .signature-item {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .signature-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      background: white;
+      padding: 5px;
+    }
+    .name-display {
+      display: none;
+      text-align: center;
+      padding: 8px;
+      background-color: var(--secondary);
+      color: white;
+      border-radius: 0 0 5px 5px;
+      margin-top: -5px;
+    }
+    .form-tutor {
+      text-align: center;
+      padding: 20px;
+      background-color: #ecf0f1;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .form-tutor img {
+      width: 200px;
+      height: 80px;
+      object-fit: contain;
+      margin: 10px 0;
+    }
+    @media (max-width: 768px) {
+      .signature-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .signature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- 11A Form Group -->
-    <section class="form-group">
-        <h2>11A Form Group</h2>
-        <div class="signature-grid">
-            <!-- Repeat this block for each student -->
-            <div class="signature-item">
-                <img src="student-signature-url.jpg" alt="Student Signature">
-                <div class="name-display">Student Name</div>
-            </div>
-            <!-- Add more student items here -->
-        </div>
 
-        <div class="form-tutor">
-            <h3>Form Tutor Signature</h3>
-            <img src="tutor-signature-url.jpg" alt="Tutor Signature">
-            <p>Mr. John Smith</p>
-        </div>
-    </section>
+<!-- 11A -->
+<section class="form-group">
+  <h2>11A Form Group</h2>
+  <div class="signature-grid">
+    <!-- 30 students -->
+    <!-- Replace names and image URLs as needed -->
+    <div class="signature-item"><img src="signatures/11A_01.png"><div class="name-display">Student 1A-01</div></div>
+    <div class="signature-item"><img src="signatures/11A_02.png"><div class="name-display">Student 1A-02</div></div>
+    <div class="signature-item"><img src="signatures/11A_03.png"><div class="name-display">Student 1A-03</div></div>
+    <div class="signature-item"><img src="signatures/11A_04.png"><div class="name-display">Student 1A-04</div></div>
+    <div class="signature-item"><img src="signatures/11A_05.png"><div class="name-display">Student 1A-05</div></div>
+    <div class="signature-item"><img src="signatures/11A_06.png"><div class="name-display">Student 1A-06</div></div>
+    <div class="signature-item"><img src="signatures/11A_07.png"><div class="name-display">Student 1A-07</div></div>
+    <div class="signature-item"><img src="signatures/11A_08.png"><div class="name-display">Student 1A-08</div></div>
+    <div class="signature-item"><img src="signatures/11A_09.png"><div class="name-display">Student 1A-09</div></div>
+    <div class="signature-item"><img src="signatures/11A_10.png"><div class="name-display">Student 1A-10</div></div>
+    <div class="signature-item"><img src="signatures/11A_11.png"><div class="name-display">Student 1A-11</div></div>
+    <div class="signature-item"><img src="signatures/11A_12.png"><div class="name-display">Student 1A-12</div></div>
+    <div class="signature-item"><img src="signatures/11A_13.png"><div class="name-display">Student 1A-13</div></div>
+    <div class="signature-item"><img src="signatures/11A_14.png"><div class="name-display">Student 1A-14</div></div>
+    <div class="signature-item"><img src="signatures/11A_15.png"><div class="name-display">Student 1A-15</div></div>
+    <div class="signature-item"><img src="signatures/11A_16.png"><div class="name-display">Student 1A-16</div></div>
+    <div class="signature-item"><img src="signatures/11A_17.png"><div class="name-display">Student 1A-17</div></div>
+    <div class="signature-item"><img src="signatures/11A_18.png"><div class="name-display">Student 1A-18</div></div>
+    <div class="signature-item"><img src="signatures/11A_19.png"><div class="name-display">Student 1A-19</div></div>
+    <div class="signature-item"><img src="signatures/11A_20.png"><div class="name-display">Student 1A-20</div></div>
+    <div class="signature-item"><img src="signatures/11A_21.png"><div class="name-display">Student 1A-21</div></div>
+    <div class="signature-item"><img src="signatures/11A_22.png"><div class="name-display">Student 1A-22</div></div>
+    <div class="signature-item"><img src="signatures/11A_23.png"><div class="name-display">Student 1A-23</div></div>
+    <div class="signature-item"><img src="signatures/11A_24.png"><div class="name-display">Student 1A-24</div></div>
+    <div class="signature-item"><img src="signatures/11A_25.png"><div class="name-display">Student 1A-25</div></div>
+    <div class="signature-item"><img src="signatures/11A_26.png"><div class="name-display">Student 1A-26</div></div>
+    <div class="signature-item"><img src="signatures/11A_27.png"><div class="name-display">Student 1A-27</div></div>
+    <div class="signature-item"><img src="signatures/11A_28.png"><div class="name-display">Student 1A-28</div></div>
+    <div class="signature-item"><img src="signatures/11A_29.png"><div class="name-display">Student 1A-29</div></div>
+    <div class="signature-item"><img src="signatures/11A_30.png"><div class="name-display">Student 1A-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11A_tutor.png" alt="Tutor Signature">
+    <p>Mr. John Smith</p>
+  </div>
+</section>
 
-    <!-- Repeat for 11B-11G -->
-    <section class="form-group">
-        <h2>11B Form Group</h2>
-        <div class="signature-grid">
-            <!-- Student items here -->
-        </div>
-        <div class="form-tutor">
-            <h3>Form Tutor Signature</h3>
-            <img src="tutor-signature-url.jpg" alt="Tutor Signature">
-            <p>Ms. Sarah Johnson</p>
-        </div>
-    </section>
+<!-- 11B -->
+<section class="form-group">
+  <h2>11B Form Group</h2>
+  <div class="signature-grid">
+    <div class="signature-item"><img src="signatures/11B_01.png"><div class="name-display">Student 1B-01</div></div>
+    <div class="signature-item"><img src="signatures/11B_02.png"><div class="name-display">Student 1B-02</div></div>
+    <div class="signature-item"><img src="signatures/11B_03.png"><div class="name-display">Student 1B-03</div></div>
+    <div class="signature-item"><img src="signatures/11B_04.png"><div class="name-display">Student 1B-04</div></div>
+    <div class="signature-item"><img src="signatures/11B_05.png"><div class="name-display">Student 1B-05</div></div>
+    <div class="signature-item"><img src="signatures/11B_06.png"><div class="name-display">Student 1B-06</div></div>
+    <div class="signature-item"><img src="signatures/11B_07.png"><div class="name-display">Student 1B-07</div></div>
+    <div class="signature-item"><img src="signatures/11B_08.png"><div class="name-display">Student 1B-08</div></div>
+    <div class="signature-item"><img src="signatures/11B_09.png"><div class="name-display">Student 1B-09</div></div>
+    <div class="signature-item"><img src="signatures/11B_10.png"><div class="name-display">Student 1B-10</div></div>
+    <div class="signature-item"><img src="signatures/11B_11.png"><div class="name-display">Student 1B-11</div></div>
+    <div class="signature-item"><img src="signatures/11B_12.png"><div class="name-display">Student 1B-12</div></div>
+    <div class="signature-item"><img src="signatures/11B_13.png"><div class="name-display">Student 1B-13</div></div>
+    <div class="signature-item"><img src="signatures/11B_14.png"><div class="name-display">Student 1B-14</div></div>
+    <div class="signature-item"><img src="signatures/11B_15.png"><div class="name-display">Student 1B-15</div></div>
+    <div class="signature-item"><img src="signatures/11B_16.png"><div class="name-display">Student 1B-16</div></div>
+    <div class="signature-item"><img src="signatures/11B_17.png"><div class="name-display">Student 1B-17</div></div>
+    <div class="signature-item"><img src="signatures/11B_18.png"><div class="name-display">Student 1B-18</div></div>
+    <div class="signature-item"><img src="signatures/11B_19.png"><div class="name-display">Student 1B-19</div></div>
+    <div class="signature-item"><img src="signatures/11B_20.png"><div class="name-display">Student 1B-20</div></div>
+    <div class="signature-item"><img src="signatures/11B_21.png"><div class="name-display">Student 1B-21</div></div>
+    <div class="signature-item"><img src="signatures/11B_22.png"><div class="name-display">Student 1B-22</div></div>
+    <div class="signature-item"><img src="signatures/11B_23.png"><div class="name-display">Student 1B-23</div></div>
+    <div class="signature-item"><img src="signatures/11B_24.png"><div class="name-display">Student 1B-24</div></div>
+    <div class="signature-item"><img src="signatures/11B_25.png"><div class="name-display">Student 1B-25</div></div>
+    <div class="signature-item"><img src="signatures/11B_26.png"><div class="name-display">Student 1B-26</div></div>
+    <div class="signature-item"><img src="signatures/11B_27.png"><div class="name-display">Student 1B-27</div></div>
+    <div class="signature-item"><img src="signatures/11B_28.png"><div class="name-display">Student 1B-28</div></div>
+    <div class="signature-item"><img src="signatures/11B_29.png"><div class="name-display">Student 1B-29</div></div>
+    <div class="signature-item"><img src="signatures/11B_30.png"><div class="name-display">Student 1B-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11B_tutor.png" alt="Tutor Signature">
+    <p>Ms. Sarah Johnson</p>
+  </div>
+</section>
 
-    <!-- Add remaining form groups (11C-11G) following same structure -->
+<!-- 11C -->
+<section class="form-group">
+  <h2>11C Form Group</h2>
+  <div class="signature-grid">
+    <div class="signature-item"><img src="signatures/11C_01.png"><div class="name-display">Student 1C-01</div></div>
+    <div class="signature-item"><img src="signatures/11C_02.png"><div class="name-display">Student 1C-02</div></div>
+    <div class="signature-item"><img src="signatures/11C_03.png"><div class="name-display">Student 1C-03</div></div>
+    <div class="signature-item"><img src="signatures/11C_04.png"><div class="name-display">Student 1C-04</div></div>
+    <div class="signature-item"><img src="signatures/11C_05.png"><div class="name-display">Student 1C-05</div></div>
+    <div class="signature-item"><img src="signatures/11C_06.png"><div class="name-display">Student 1C-06</div></div>
+    <div class="signature-item"><img src="signatures/11C_07.png"><div class="name-display">Student 1C-07</div></div>
+    <div class="signature-item"><img src="signatures/11C_08.png"><div class="name-display">Student 1C-08</div></div>
+    <div class="signature-item"><img src="signatures/11C_09.png"><div class="name-display">Student 1C-09</div></div>
+    <div class="signature-item"><img src="signatures/11C_10.png"><div class="name-display">Student 1C-10</div></div>
+    <div class="signature-item"><img src="signatures/11C_11.png"><div class="name-display">Student 1C-11</div></div>
+    <div class="signature-item"><img src="signatures/11C_12.png"><div class="name-display">Student 1C-12</div></div>
+    <div class="signature-item"><img src="signatures/11C_13.png"><div class="name-display">Student 1C-13</div></div>
+    <div class="signature-item"><img src="signatures/11C_14.png"><div class="name-display">Student 1C-14</div></div>
+    <div class="signature-item"><img src="signatures/11C_15.png"><div class="name-display">Student 1C-15</div></div>
+    <div class="signature-item"><img src="signatures/11C_16.png"><div class="name-display">Student 1C-16</div></div>
+    <div class="signature-item"><img src="signatures/11C_17.png"><div class="name-display">Student 1C-17</div></div>
+    <div class="signature-item"><img src="signatures/11C_18.png"><div class="name-display">Student 1C-18</div></div>
+    <div class="signature-item"><img src="signatures/11C_19.png"><div class="name-display">Student 1C-19</div></div>
+    <div class="signature-item"><img src="signatures/11C_20.png"><div class="name-display">Student 1C-20</div></div>
+    <div class="signature-item"><img src="signatures/11C_21.png"><div class="name-display">Student 1C-21</div></div>
+    <div class="signature-item"><img src="signatures/11C_22.png"><div class="name-display">Student 1C-22</div></div>
+    <div class="signature-item"><img src="signatures/11C_23.png"><div class="name-display">Student 1C-23</div></div>
+    <div class="signature-item"><img src="signatures/11C_24.png"><div class="name-display">Student 1C-24</div></div>
+    <div class="signature-item"><img src="signatures/11C_25.png"><div class="name-display">Student 1C-25</div></div>
+    <div class="signature-item"><img src="signatures/11C_26.png"><div class="name-display">Student 1C-26</div></div>
+    <div class="signature-item"><img src="signatures/11C_27.png"><div class="name-display">Student 1C-27</div></div>
+    <div class="signature-item"><img src="signatures/11C_28.png"><div class="name-display">Student 1C-28</div></div>
+    <div class="signature-item"><img src="signatures/11C_29.png"><div class="name-display">Student 1C-29</div></div>
+    <div class="signature-item"><img src="signatures/11C_30.png"><div class="name-display">Student 1C-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11C_tutor.png" alt="Tutor Signature">
+    <p>Mr. Ahmed Zaki</p>
+  </div>
+</section>
 
-    <script>
-        document.querySelectorAll('.signature-item').forEach(item => {
-            item.addEventListener('click', function() {
-                const nameDisplay = this.querySelector('.name-display');
-                nameDisplay.style.display = nameDisplay.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
+<!-- 11D -->
+<section class="form-group">
+  <h2>11D Form Group</h2>
+  <div class="signature-grid">
+    <div class="signature-item"><img src="signatures/11D_01.png"><div class="name-display">Student 1D-01</div></div>
+    <div class="signature-item"><img src="signatures/11D_02.png"><div class="name-display">Student 1D-02</div></div>
+    <div class="signature-item"><img src="signatures/11D_03.png"><div class="name-display">Student 1D-03</div></div>
+    <div class="signature-item"><img src="signatures/11D_04.png"><div class="name-display">Student 1D-04</div></div>
+    <div class="signature-item"><img src="signatures/11D_05.png"><div class="name-display">Student 1D-05</div></div>
+    <div class="signature-item"><img src="signatures/11D_06.png"><div class="name-display">Student 1D-06</div></div>
+    <div class="signature-item"><img src="signatures/11D_07.png"><div class="name-display">Student 1D-07</div></div>
+    <div class="signature-item"><img src="signatures/11D_08.png"><div class="name-display">Student 1D-08</div></div>
+    <div class="signature-item"><img src="signatures/11D_09.png"><div class="name-display">Student 1D-09</div></div>
+    <div class="signature-item"><img src="signatures/11D_10.png"><div class="name-display">Student 1D-10</div></div>
+    <div class="signature-item"><img src="signatures/11D_11.png"><div class="name-display">Student 1D-11</div></div>
+    <div class="signature-item"><img src="signatures/11D_12.png"><div class="name-display">Student 1D-12</div></div>
+    <div class="signature-item"><img src="signatures/11D_13.png"><div class="name-display">Student 1D-13</div></div>
+    <div class="signature-item"><img src="signatures/11D_14.png"><div class="name-display">Student 1D-14</div></div>
+    <div class="signature-item"><img src="signatures/11D_15.png"><div class="name-display">Student 1D-15</div></div>
+    <div class="signature-item"><img src="signatures/11D_16.png"><div class="name-display">Student 1D-16</div></div>
+    <div class="signature-item"><img src="signatures/11D_17.png"><div class="name-display">Student 1D-17</div></div>
+    <div class="signature-item"><img src="signatures/11D_18.png"><div class="name-display">Student 1D-18</div></div>
+    <div class="signature-item"><img src="signatures/11D_19.png"><div class="name-display">Student 1D-19</div></div>
+    <div class="signature-item"><img src="signatures/11D_20.png"><div class="name-display">Student 1D-20</div></div>
+    <div class="signature-item"><img src="signatures/11D_21.png"><div class="name-display">Student 1D-21</div></div>
+    <div class="signature-item"><img src="signatures/11D_22.png"><div class="name-display">Student 1D-22</div></div>
+    <div class="signature-item"><img src="signatures/11D_23.png"><div class="name-display">Student 1D-23</div></div>
+    <div class="signature-item"><img src="signatures/11D_24.png"><div class="name-display">Student 1D-24</div></div>
+    <div class="signature-item"><img src="signatures/11D_25.png"><div class="name-display">Student 1D-25</div></div>
+    <div class="signature-item"><img src="signatures/11D_26.png"><div class="name-display">Student 1D-26</div></div>
+    <div class="signature-item"><img src="signatures/11D_27.png"><div class="name-display">Student 1D-27</div></div>
+    <div class="signature-item"><img src="signatures/11D_28.png"><div class="name-display">Student 1D-28</div></div>
+    <div class="signature-item"><img src="signatures/11D_29.png"><div class="name-display">Student 1D-29</div></div>
+    <div class="signature-item"><img src="signatures/11D_30.png"><div class="name-display">Student 1D-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11D_tutor.png" alt="Tutor Signature">
+    <p>Ms. Emily Carter</p>
+  </div>
+</section>
+
+<!-- 11E -->
+<section class="form-group">
+  <h2>11E Form Group</h2>
+  <div class="signature-grid">
+    <div class="signature-item"><img src="signatures/11E_01.png"><div class="name-display">Student 1E-01</div></div>
+    <div class="signature-item"><img src="signatures/11E_02.png"><div class="name-display">Student 1E-02</div></div>
+    <div class="signature-item"><img src="signatures/11E_03.png"><div class="name-display">Student 1E-03</div></div>
+    <div class="signature-item"><img src="signatures/11E_04.png"><div class="name-display">Student 1E-04</div></div>
+    <div class="signature-item"><img src="signatures/11E_05.png"><div class="name-display">Student 1E-05</div></div>
+    <div class="signature-item"><img src="signatures/11E_06.png"><div class="name-display">Student 1E-06</div></div>
+    <div class="signature-item"><img src="signatures/11E_07.png"><div class="name-display">Student 1E-07</div></div>
+    <div class="signature-item"><img src="signatures/11E_08.png"><div class="name-display">Student 1E-08</div></div>
+    <div class="signature-item"><img src="signatures/11E_09.png"><div class="name-display">Student 1E-09</div></div>
+    <div class="signature-item"><img src="signatures/11E_10.png"><div class="name-display">Student 1E-10</div></div>
+    <div class="signature-item"><img src="signatures/11E_11.png"><div class="name-display">Student 1E-11</div></div>
+    <div class="signature-item"><img src="signatures/11E_12.png"><div class="name-display">Student 1E-12</div></div>
+    <div class="signature-item"><img src="signatures/11E_13.png"><div class="name-display">Student 1E-13</div></div>
+    <div class="signature-item"><img src="signatures/11E_14.png"><div class="name-display">Student 1E-14</div></div>
+    <div class="signature-item"><img src="signatures/11E_15.png"><div class="name-display">Student 1E-15</div></div>
+    <div class="signature-item"><img src="signatures/11E_16.png"><div class="name-display">Student 1E-16</div></div>
+    <div class="signature-item"><img src="signatures/11E_17.png"><div class="name-display">Student 1E-17</div></div>
+    <div class="signature-item"><img src="signatures/11E_18.png"><div class="name-display">Student 1E-18</div></div>
+    <div class="signature-item"><img src="signatures/11E_19.png"><div class="name-display">Student 1E-19</div></div>
+    <div class="signature-item"><img src="signatures/11E_20.png"><div class="name-display">Student 1E-20</div></div>
+    <div class="signature-item"><img src="signatures/11E_21.png"><div class="name-display">Student 1E-21</div></div>
+    <div class="signature-item"><img src="signatures/11E_22.png"><div class="name-display">Student 1E-22</div></div>
+    <div class="signature-item"><img src="signatures/11E_23.png"><div class="name-display">Student 1E-23</div></div>
+    <div class="signature-item"><img src="signatures/11E_24.png"><div class="name-display">Student 1E-24</div></div>
+    <div class="signature-item"><img src="signatures/11E_25.png"><div class="name-display">Student 1E-25</div></div>
+    <div class="signature-item"><img src="signatures/11E_26.png"><div class="name-display">Student 1E-26</div></div>
+    <div class="signature-item"><img src="signatures/11E_27.png"><div class="name-display">Student 1E-27</div></div>
+    <div class="signature-item"><img src="signatures/11E_28.png"><div class="name-display">Student 1E-28</div></div>
+    <div class="signature-item"><img src="signatures/11E_29.png"><div class="name-display">Student 1E-29</div></div>
+    <div class="signature-item"><img src="signatures/11E_30.png"><div class="name-display">Student 1E-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11E_tutor.png" alt="Tutor Signature">
+    <p>Mrs. Linda Green</p>
+  </div>
+</section>
+
+<!-- 11F -->
+<section class="form-group">
+  <h2>11F Form Group</h2>
+  <div class="signature-grid">
+    <div class="signature-item"><img src="signatures/11F_01.png"><div class="name-display">Student 1F-01</div></div>
+    <div class="signature-item"><img src="signatures/11F_02.png"><div class="name-display">Student 1F-02</div></div>
+    <div class="signature-item"><img src="signatures/11F_03.png"><div class="name-display">Student 1F-03</div></div>
+    <div class="signature-item"><img src="signatures/11F_04.png"><div class="name-display">Student 1F-04</div></div>
+    <div class="signature-item"><img src="signatures/11F_05.png"><div class="name-display">Student 1F-05</div></div>
+    <div class="signature-item"><img src="signatures/11F_06.png"><div class="name-display">Student 1F-06</div></div>
+    <div class="signature-item"><img src="signatures/11F_07.png"><div class="name-display">Student 1F-07</div></div>
+    <div class="signature-item"><img src="signatures/11F_08.png"><div class="name-display">Student 1F-08</div></div>
+    <div class="signature-item"><img src="signatures/11F_09.png"><div class="name-display">Student 1F-09</div></div>
+    <div class="signature-item"><img src="signatures/11F_10.png"><div class="name-display">Student 1F-10</div></div>
+    <div class="signature-item"><img src="signatures/11F_11.png"><div class="name-display">Student 1F-11</div></div>
+    <div class="signature-item"><img src="signatures/11F_12.png"><div class="name-display">Student 1F-12</div></div>
+    <div class="signature-item"><img src="signatures/11F_13.png"><div class="name-display">Student 1F-13</div></div>
+    <div class="signature-item"><img src="signatures/11F_14.png"><div class="name-display">Student 1F-14</div></div>
+    <div class="signature-item"><img src="signatures/11F_15.png"><div class="name-display">Student 1F-15</div></div>
+    <div class="signature-item"><img src="signatures/11F_16.png"><div class="name-display">Student 1F-16</div></div>
+    <div class="signature-item"><img src="signatures/11F_17.png"><div class="name-display">Student 1F-17</div></div>
+    <div class="signature-item"><img src="signatures/11F_18.png"><div class="name-display">Student 1F-18</div></div>
+    <div class="signature-item"><img src="signatures/11F_19.png"><div class="name-display">Student 1F-19</div></div>
+    <div class="signature-item"><img src="signatures/11F_20.png"><div class="name-display">Student 1F-20</div></div>
+    <div class="signature-item"><img src="signatures/11F_21.png"><div class="name-display">Student 1F-21</div></div>
+    <div class="signature-item"><img src="signatures/11F_22.png"><div class="name-display">Student 1F-22</div></div>
+    <div class="signature-item"><img src="signatures/11F_23.png"><div class="name-display">Student 1F-23</div></div>
+    <div class="signature-item"><img src="signatures/11F_24.png"><div class="name-display">Student 1F-24</div></div>
+    <div class="signature-item"><img src="signatures/11F_25.png"><div class="name-display">Student 1F-25</div></div>
+    <div class="signature-item"><img src="signatures/11F_26.png"><div class="name-display">Student 1F-26</div></div>
+    <div class="signature-item"><img src="signatures/11F_27.png"><div class="name-display">Student 1F-27</div></div>
+    <div class="signature-item"><img src="signatures/11F_28.png"><div class="name-display">Student 1F-28</div></div>
+    <div class="signature-item"><img src="signatures/11F_29.png"><div class="name-display">Student 1F-29</div></div>
+    <div class="signature-item"><img src="signatures/11F_30.png"><div class="name-display">Student 1F-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11F_tutor.png" alt="Tutor Signature">
+    <p>Mr. David Lee</p>
+  </div>
+</section>
+
+<!-- 11G -->
+<section class="form-group">
+  <h2>11G Form Group</h2>
+  <div class="signature-grid">
+    <div class="signature-item"><img src="signatures/11G_01.png"><div class="name-display">Student 1G-01</div></div>
+    <div class="signature-item"><img src="signatures/11G_02.png"><div class="name-display">Student 1G-02</div></div>
+    <div class="signature-item"><img src="signatures/11G_03.png"><div class="name-display">Student 1G-03</div></div>
+    <div class="signature-item"><img src="signatures/11G_04.png"><div class="name-display">Student 1G-04</div></div>
+    <div class="signature-item"><img src="signatures/11G_05.png"><div class="name-display">Student 1G-05</div></div>
+    <div class="signature-item"><img src="signatures/11G_06.png"><div class="name-display">Student 1G-06</div></div>
+    <div class="signature-item"><img src="signatures/11G_07.png"><div class="name-display">Student 1G-07</div></div>
+    <div class="signature-item"><img src="signatures/11G_08.png"><div class="name-display">Student 1G-08</div></div>
+    <div class="signature-item"><img src="signatures/11G_09.png"><div class="name-display">Student 1G-09</div></div>
+    <div class="signature-item"><img src="signatures/11G_10.png"><div class="name-display">Student 1G-10</div></div>
+    <div class="signature-item"><img src="signatures/11G_11.png"><div class="name-display">Student 1G-11</div></div>
+    <div class="signature-item"><img src="signatures/11G_12.png"><div class="name-display">Student 1G-12</div></div>
+    <div class="signature-item"><img src="signatures/11G_13.png"><div class="name-display">Student 1G-13</div></div>
+    <div class="signature-item"><img src="signatures/11G_14.png"><div class="name-display">Student 1G-14</div></div>
+    <div class="signature-item"><img src="signatures/11G_15.png"><div class="name-display">Student 1G-15</div></div>
+    <div class="signature-item"><img src="signatures/11G_16.png"><div class="name-display">Student 1G-16</div></div>
+    <div class="signature-item"><img src="signatures/11G_17.png"><div class="name-display">Student 1G-17</div></div>
+    <div class="signature-item"><img src="signatures/11G_18.png"><div class="name-display">Student 1G-18</div></div>
+    <div class="signature-item"><img src="signatures/11G_19.png"><div class="name-display">Student 1G-19</div></div>
+    <div class="signature-item"><img src="signatures/11G_20.png"><div class="name-display">Student 1G-20</div></div>
+    <div class="signature-item"><img src="signatures/11G_21.png"><div class="name-display">Student 1G-21</div></div>
+    <div class="signature-item"><img src="signatures/11G_22.png"><div class="name-display">Student 1G-22</div></div>
+    <div class="signature-item"><img src="signatures/11G_23.png"><div class="name-display">Student 1G-23</div></div>
+    <div class="signature-item"><img src="signatures/11G_24.png"><div class="name-display">Student 1G-24</div></div>
+    <div class="signature-item"><img src="signatures/11G_25.png"><div class="name-display">Student 1G-25</div></div>
+    <div class="signature-item"><img src="signatures/11G_26.png"><div class="name-display">Student 1G-26</div></div>
+    <div class="signature-item"><img src="signatures/11G_27.png"><div class="name-display">Student 1G-27</div></div>
+    <div class="signature-item"><img src="signatures/11G_28.png"><div class="name-display">Student 1G-28</div></div>
+    <div class="signature-item"><img src="signatures/11G_29.png"><div class="name-display">Student 1G-29</div></div>
+    <div class="signature-item"><img src="signatures/11G_30.png"><div class="name-display">Student 1G-30</div></div>
+  </div>
+  <div class="form-tutor">
+    <h3>Form Tutor Signature</h3>
+    <img src="signatures/11G_tutor.png" alt="Tutor Signature">
+    <p>Ms. Fatima Noor</p>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.signature-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const nameDisplay = this.querySelector('.name-display');
+    nameDisplay.style.display = nameDisplay.style.display === 'block' ? 'none' : 'block';
+  });
+});
+</script>
 </body>
 </html>
